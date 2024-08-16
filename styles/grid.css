@@ -1,0 +1,31 @@
+/* grid */
+.wrapper {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+    
+    header{
+        grid-area: header;
+        display: grid;
+        grid-template-areas: 
+            "navbar"
+            "newsletter";
+    }
+        header .newsletter{
+            grid-area: newsletter;
+            display: grid;
+            grid-template-areas: 
+                "newsletter-form-title newsletter-snippet";
+            align-items: center;
+        }
+
+    main{
+        grid-area: main;
+    }
+    
+    footer{
+        grid-area: footer;
+    }

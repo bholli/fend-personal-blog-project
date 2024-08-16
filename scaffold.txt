@@ -1,0 +1,72 @@
+<header>
+    <div class="navbar">
+        <a href="#" class="logo">Title</a>
+        <ul class="nav">
+            <li><a href="#">Link</a></li>
+        </ul>
+    </div>
+
+    <div class="newsletter">
+        <div class="newsletter-form-title">
+            <h1>Title</h1>
+            <form>
+                <input type="email" placeholder="Email Address">
+                <button>Subscribe</button>
+            </form>
+        </div>
+        <div class="newsletter-snippet">
+            <p>Snippet Text.</p>
+        </div>
+    </div>
+</header>
+    
+<main>
+    <div class="posts">
+        <article class="post">
+            <div class="post-meta">
+                <div class="post-author">Author</div>
+                <div class="post-date">DD Month YYYY</div>
+            </div>
+            <h2 class="post-title">Title</h2>
+            <div class="post-excerpt">excerpt text</div>
+            <div class="post-tags">
+                <a href="#" class="tag">Tag</a>
+                <a href="#" class="tag">Tag</a>
+                <a href="#" class="tag">Tag</a>
+            </div>
+        </article>
+    </div>
+</main>
+<footer>
+    <div class="top">
+        <div class="cta">
+            <h1>Call to Action</h1>
+            <p>Call to action wording and instructions.</p>
+            <button>Get Started</button>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="about">
+            <a href="#"><img src="" alt ></a>
+            <ul>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </div>
+        <div class="download">
+            <h2>Get the App</h2>
+            <a href="#" class="icon">App Store</a>
+            <a href="#" class="icon">Google Play</a>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="copyright">
+            <p>&copy; 2024 Company. All rights reserved.</p>
+        </div>
+        <div class="social-icons">
+            <a href="#" class="icon">Facebook</a>
+            <a href="#" class="icon">Twitter</a>
+            <a href="#" class="icon">Instagram</a>
+        </div>
+    </div>
+
+</footer>
