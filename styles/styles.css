@@ -113,7 +113,7 @@ header{
         }
 
     header .newsletter .newsletter-snippet{
-        padding-left: .75rem;
+        padding-left: 0.75rem;
     }
 
         header .newsletter .newsletter-snippet p{
@@ -273,3 +273,113 @@ footer .footer-bottom{
             font-size: 1.25rem;
             margin: 0 .5rem;
         }
+
+
+/*responsive*/
+
+@media screen and (max-width:1240px)
+{
+    .container{
+        max-width: 1080px;
+        padding: 0 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1192px)
+{
+    .container{
+        max-width: 1080px;
+        padding: 0 1.5rem;
+    }
+
+    main .posts .card{
+        width: calc(50% - 1.75rem);
+    }
+}
+
+@media screen and (max-width: 1024px){
+    
+    .container{
+        max-width: 100%;
+        padding: 0 1.5rem;
+    }
+    
+    header .navbar .nav li a{
+        padding: 0 0.5em;
+    }
+
+    header .newsletter .newsletter-form{
+        width: auto;
+    }
+
+    main .posts .card{
+        width: calc(50% - 1.75rem);
+    }
+
+    header .newsletter .newsletter-snippet {
+        padding-left: 1.75rem;
+    }
+
+    header .newsletter .newsletter-form input{
+        width: calc(100% - 1.75rem - 104.45px);
+    }
+
+}
+
+@media screen and (max-width: 992px){
+    
+    .container{
+        max-width: 100%;
+        padding: 0 1.5rem;
+    }
+
+    header .newsletter .newsletter-snippet{
+        display: none;
+    }
+
+    main .posts .card{
+        width: calc(50% - 1.75rem);
+    }
+
+    footer .footer-middle p{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header .navbar .nav{
+        display: none;
+    }
+
+    header .newsletter .newsletter-form{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .newsletter .newsletter-form input{
+        width: 100%;
+    }
+
+    header .newsletter .newsletter-form button{
+        padding: 0.5rem 1rem 0.45rem;
+    }
+
+    header .newsletter .newsletter-snippet{
+        display: none;
+    }
+
+    main .posts .card{
+        width: 100%;
+        margin-bottom: 4.25rem;
+    }
+
+}
+
+@media screen and (max-width: 570px){
+    
+
+    footer .footer-middle{
+        flex-direction: column;
+    }
+}
