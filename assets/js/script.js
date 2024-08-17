@@ -16,5 +16,6 @@ if (id){
     document.querySelector('.single-blog-post .post-content p.lead').textContent = posts[postId][2];
     document.querySelector('.single-blog-post .post-featured-image img').src = `../img/feature-${id}.png`;
     document.querySelector('.single-blog-post .post-featured-image img').alt = posts[postId][0];
+    document.querySelector('.single-blog-post .breadcrumbs .active').textContent = posts[postId][1];
 }
 
