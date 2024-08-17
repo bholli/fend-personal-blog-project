@@ -1,3 +1,33 @@
+header
+    navbar
+        logo
+        nav
+            li
+
+main
+    posts
+        card
+            article
+                post-meta
+                    post-author
+                    post-date
+                post-title
+                post-excerpt
+                post-tags
+                    tag
+
+footer 
+    top
+        cta
+    middle
+        about
+        download 
+    bottom
+        copyright
+        social-icons
+
+-----------------------------------------------------------------------
+
 <header>
     <div class="navbar">
         <a href="#" class="logo">Title</a>
