@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('font-awesome/css/all.min.css');
+@import url('grid.css');
+@import url('header.css');
+@import url('main.css');
+@import url('footer.css');
+
+*{
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    color: #495057;
+    margin:0;
+}
+
+.breadcrumbs {
+    background: #ede3f7;
+    width: max-content;
+    padding: 1rem 1.5rem;
+    border-radius: 40px;
+    font-size: 0.795rem;
+}
+
+.btn{
+    background: #2f68f0;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.25rem 0.45rem;
+    border-radius: 8px;
+    cursor: pointer;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+hr{
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+img{
+    max-width: 100%;
+}
+
+.lead{
+    font-size: 1.35rem;
+    font-weight: 400;
+    margin-top: 4.5rem;
+    margin-bottom: 3rem;
+}
+
+.avatar{
+    height: 1.5rem;
+    width: 1.5rem;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*responsive*/
+
+@media screen and (max-width:1240px)
+{
+    .container{
+        width: 1080px;
+        padding: 0 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1192px)
+{
+    .container{
+        width: 100%;
+        max-width: 1080px;
+        padding: 0 1.5rem;
+    }
+
+    main .posts .card{
+        width: calc(50% - 1.75rem);
+    }
+}
+
+@media screen and (max-width: 1024px){
+    
+    .container{
+        width: 100%;
+        padding: 0 1.5rem;
+    }
+    
+    header .navbar .nav li a{
+        padding: 0 0.5em;
+    }
+
+    header .newsletter .newsletter-form{
+        width: auto;
+    }
+
+    main .posts .card{
+        width: calc(50% - 1.75rem);
+    }
+
+    header .newsletter .newsletter-snippet {
+        padding-left: 1.75rem;
+    }
+
+    header .newsletter .newsletter-form input{
+        width: calc(100% - 1.75rem - 104.45px);
+    }
+
+}
+
+@media screen and (max-width: 992px){
+    
+    .container{
+        width: 100%;
+        padding: 0 1.5rem;
+    }
+
+    header .newsletter .newsletter-snippet{
+        display: none;
+    }
+
+    main .posts .card{
+        width: calc(50% - 1.75rem);
+    }
+
+    footer .footer-middle p{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 968px){
+    header .navbar{
+        flex-direction: column;
+    }
+
+    main .single-blog-post .post{
+        width: 100%;
+        margin: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header .navbar .nav{
+        display: none;
+    }
+
+    header .newsletter .newsletter-form{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .newsletter .newsletter-form input{
+        width: 100%;
+    }
+
+    header .newsletter .newsletter-form button{
+        padding: 0.5rem 1rem 0.45rem;
+    }
+
+    header .newsletter .newsletter-snippet{
+        display: none;
+    }
+
+    main .posts .card{
+        width: 100%;
+        margin-bottom: 4.25rem;
+    }
+
+    main .single-blog-post article.article .post-content{
+        padding: 0 1.5rem;
+    }
+
+    .breadcrumbs{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 570px){
+    
+    .container{
+        width: 100%;;
+    }
+
+    main {
+        padding: 2rem 0 2rem;
+    }
+
+    main .single-blog-post article.article h1{
+        font-size: 2.45rem;
+    }
+
+    main .single-blog-post article.article .post-content{
+        padding: 0;
+    }
+
+    footer .footer-middle{
+        flex-direction: column;
+    }
+
+    footer .footer-middle .navbar{
+        display: none;
+    }
+}
